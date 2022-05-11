@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>3D Object</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+</head>
+
+<body>
+    <audio autoplay>
+        <source src="/assets/Tiger Roar Sound Effect.mp4" type="audio/mp4">
+      </audio>
+      
+    <div id="title">
+        <h1>Tiger</h1>
+        <h2>The tiger (Panthera tigris) is the largest living cat species and a member of the genus Panthera. <br>It is most recognisable for its dark vertical stripes on orange fur with a white underside.<br> An apex predator, it primarily preys on ungulates such as deer and wild boar.<br> It is territorial and generally a solitary but social predator, requiring large contiguous areas<br> of habitat, which support its requirements for prey and rearing of its offspring.<br> Tiger cubs stay with their mother for about two years, then become independent and leave<br> their mother's home range to establish their own. </h2>
+
+    <div id="container">
+
+        <div id="aSide">
+            <!-- put the assets in the asset folder and just change the name in case you forgor-->
+            <model-viewer src="assets/TIGERR.gltf" alt="TIGERR" auto-rotate camera-controls ar ios-src="assets/TIGERR.gltf">
+            </model-viewer>
+        </div>
+        <img src="assets/logo.jpeg"  height="auto" width="100%"/>
+       
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

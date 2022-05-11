@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>coorg virtual museum</title>
+   
+    
+  </head>
+  <body>
+    <script src="three.js"></script>
+    <script src="OBJLoader.js"></script>
+    <script src="OBJLoader.js"></script>
+      <script src="three.min.js"></script>
+      <script>
+          let scene, camera, renderer;
+          function init(){
+              scene = new THREE.scene();
+              scene.background = new THREE.Color(0xdddddd);
+              camera = new THREE.PerspectiveCamera(40,window.innerWidth/window.innerHeight,1,5000);
+
+              hlight = new THREE.AmbientLight (0x404040,100);
+              scene.add(hlight);
+              renderer = new THREE.WebGLRenderer({antialias:true});
+              renderer.setSize(window.innerwidth,window.innerHeight);
+              document.body.appendChild(renderer.domElement);
+              
+              let loader = new THREE.GLTFLoader();
+              loader.load('Tiger.gltf',function(gltf){
+                  scene.add(gltf.scene);
+
+              });
+          }
+          init();
+      </script>
+      </body>
+</html>
+    
+   
+    
