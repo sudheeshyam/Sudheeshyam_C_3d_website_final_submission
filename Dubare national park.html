@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Landing Page</title>
+    <script type="text/javascript" src="sound-onclick.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>brahmagiri wildlife sanctuary</title>
+     <link rel="stylesheet" media="screen" href="Dubare national park.css" />
+</head>
+<body>
+    <!-- Background-->
+    <img src="/assets/Dubare national park.jpg" width="100%" height="auto">
+    <!-- tiger-->
+    <div class="tiger">
+        <span ondblclick="window.location='/pages/Tiger/tiger.html'"><img src="/landing assets/tiger.png"  width="165px" height="150px" onclick="audio_1.play()"> </span>
+    </div>
+    <!--elephant-->
+    <div class="elephant">
+        <span ondblclick="window.location='/pages/elephant/elephant.html'"> <img src="/landing assets/elephant.png" width="165 px" height="150px" onclick="audio_2.play()"> </span>
+    </div>
+    <!--sloth-->
+    <div class="sloth">
+         <span ondblclick="window.location='/pages/sloths/Sloth.html'"><img src="/landing assets/sloth.png" width="165 px" height="150px" onclick="audio_3.play()"> </span>
+    </div>
+     <!--audio-->
+    <script type="text/javascript">
+        const audio_1 = new Audio();
+        const audio_2 = new Audio();
+        const audio_3 = new Audio();
+        audio_1.src = "/landing assets/tiger.mp3 ";
+        audio_2.src = "/landing assets/elephant.mp3";
+        audio_3.src = "/landing assets/sloth.mp3";  
+    </script>
+</body>
+</html>

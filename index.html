@@ -1,31 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <script type="text/javascript" src="sound-onclick.js"></script>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Isometric map</title>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Landing page</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="landing page.css">
+
+
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+</head>
+
+
+<body style=background-color:black;>
+   <a href="isometicmap.html"> <button
+    id="prevbutton"
+    style="
+      width: 2000px;
+      height: 2000px;
+      transform: rotate(90deg);
+      position: absolute;
+      top: 50px;
+      left: 200px;
+      background-color: transparent;
+      z-index: 9999;
+      text-align: center;
+      color: transparent;
+      border-color: transparent ;
+      font-size: 20px;
+      cursor:pointer
+    ">
+    Click here!
+  </button>
+</a>
+
     
-    
-  </head>
-  <body>
-    
-  
-    
-    <canvas id="bg">  </canvas>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-    <header class="header">
-          <img src="assets/Isometric map.jpg" usemap="#map" height="100%" width="100%"
-          class="Isometric building" />
-          <map name="map">
-            <area shape="rect" coords="1798,140,2369, 515" alt="Computer"  href="pages/Tiger/tiger.html">
-            <area shape="rect" coords="2404,814,2975, 1189" alt="Computer" href="pages/elephant/elephant.html">
-            <area shape="rect" coords="221,157,871, 792" alt="Computer"  href="pages/sloths/Sloth.html">
-            <area shape="rect" coords="384,1035,1324, 1828" alt="Computer"  href="bramagiri.html">
-           
-           
+
+    <div id= "container">
+
+        <div id="aSide">
+            <!-- put the assets in the asset folder and just change the name in case you forgor-->
+            <model-viewer src="animals/Door/door with text glb.gltf" alt="TIGERR" auto-rotate ar ios-src="assets/TIGERR.gltf">
+            </model-viewer>
+        </div>
         
-  </body>
+       
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>

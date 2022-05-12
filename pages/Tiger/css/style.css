@@ -205,6 +205,11 @@
     top: calc(50% - 400px);
     right: 35%;
 }
+.icon1{
+top:500px;
+left:500px;
+z-index: 9999;
+}
 
 
 /* This styles the 3D object inserted in the aside container */

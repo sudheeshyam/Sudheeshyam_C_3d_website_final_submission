@@ -1,0 +1,37 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    color: grey;
+}
+
+.tiger {
+    position:absolute;
+    top: 1500px;
+    right: 2000px;
+    cursor: pointer;
+}
+.tiger:hover img{
+    transform: scale(1.3);
+    transition: transform .2s
+}
+
+.elephant {
+    position:absolute;
+    top: 1700px;
+    right: 2300px;
+}
+.elephant:hover img{
+    transform: scale(1.3);
+    transition: transform .2s
+}
+.sloth {
+    position:absolute;
+    top: 1900px;
+    right: 2100px;
+}
+.sloth:hover img{
+    transform: scale(1.3);
+    transition: transform .2s
+}
